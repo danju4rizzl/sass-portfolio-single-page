@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Deejay's default CSS */
+:root {
+	--color-primary: #27ae60;
+	--color-secondary: #ff4081;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-dark-1: #535353;
+	--color-dark-2: #212121;
+	--color-dark-3: #171717;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-weight: 400;
+	font-size: 62.5%;
+	line-height: 1.7;
+	font-family: "Poppins", sans-serif;
+	background-color: var(--color-dark-3);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-secondary);
+}
+p {
+	font-size: 0.8rem;
+}
+button {
+	border: 1px solid var(--color-primary);
+	padding: 1rem 1.5rem;
+	font-size: 0.9rem;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+
+button:hover {
+	background-color: transparent;
+	border: 1px solid var(--color-primary);
+	color: var(--color-primary);
+}
+
+/* header section is here */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 4.5rem;
+}
+
+.header .logo {
+	font-size: 3rem;
+}
+.header nav ul {
+	display: flex;
+}
+.header nav li {
+	font-size: 1.3rem;
+	margin: 0 0.8rem;
+}
+
+.header a {
+	color: var(--color-white);
+}
+
+/* hero section is here */
+.hero {
+	color: var(--color-white);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 2.5rem;
+}
+
+.hero .inner-text h1 {
+	font-size: 2.8rem;
+	font-weight: bold;
+}
+.hero .inner-text h1 span {
+	display: block;
+}
+
+.hero .inner-text p {
+	color: var(--color-dark-1);
+	margin: 0.5rem auto;
+	font-size: 1rem;
+}
+
+.hero .inner-text .button-group {
+	margin: 1.2rem auto;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.hero .inner-text .button-group button:last-child {
+	background-color: transparent;
+	border: 1px solid currentColor;
+}
+
+.hero .inner-image img {
+	border-radius: 50%;
+	border: 2px solid var(--color-primary);
+	padding: 1.2rem;
+}
+
+.title {
+	font-size: 3rem;
+	color: var(--color-white);
+	text-align: center;
+}
+
+.about {
+	color: var(--color-white);
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.about p {
+	width: 50%;
+	margin: 2rem auto;
+}
+
+.about ul {
+	display: flex;
+	justify-content: center;
+	gap: 10rem;
+	margin-top: 3rem;
+}
+
+.about li {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+.about li i {
+	font-size: 2.2rem;
+}
+
+.about li h6 {
+	font-size: 0.8rem;
+}
+.about li p {
+	margin: 0;
+}
