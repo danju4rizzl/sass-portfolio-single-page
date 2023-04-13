@@ -14,6 +14,11 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
 	</head>
 	<body>
 		<header class="header">
@@ -22,19 +27,26 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#">About me</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Contact me</a></li>
+					<li><a href="#about">About me</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact me</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<section class="hero">
 				<div class="inner-text">
-					<h1>Hi, I am <span> Oyindamola Bakare </span></h1>
-					<p>Frontend Developer</p>
+					<h1>Hi, I am <span> Deejay Dev</span></h1>
+					<p>Web Developer</p>
 
 					<div class="button-group">
+						<a
+							href="https://res.cloudinary.com/deejaydev/raw/upload/v1681348552/deejaydev/CORE_CV_template_1_bhyr17.doc"
+							download
+							target="_blank"
+						>
+							<button type="button">Download</button>
+						</a>
 						<button>Download CV</button>
 						<button>Learn More</button>
 					</div>
@@ -43,12 +55,12 @@
 				<div class="inner-image">
 					<img
 						src="https://avatars.githubusercontent.com/u/25222958?v=4"
-						alt="This na image"
+						alt="Deejaydev"
 					/>
 				</div>
 			</section>
 
-			<section class="about">
+			<section class="about" id="about">
 				<h2 class="title">About</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -94,6 +106,111 @@
 					</ul>
 				</div>
 			</section>
+
+			<section class="services" id="services">
+				<h2 class="title">What i do</h2>
+				<div class="swiper" id="cardSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card">
+								<i class="fa-brands fa-connectdevelop"></i>
+								<h4>Software Development</h4>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<i class="fa-brands fa-dev"></i>
+								<h4>Web Development</h4>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<i class="fa-brands fa-codepen"></i>
+								<h4>Web <br />Design</h4>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<i class="fa-solid fa-server"></i>
+								<h4>Backend Development</h4>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<i class="fa-solid fa-newspaper"></i>
+								<h4>Content Writing</h4>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<i class="fa-solid fa-robot"></i>
+								<h4>Technical Consultant</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="title">My Skills</h2>
+				<ul>
+					<li>
+						<h5 class="counter" data-count="98">0%</h5>
+						<p>html</p>
+					</li>
+					<li>
+						<h5 class="counter" data-count="85">0%</h5>
+						<p>css</p>
+					</li>
+					<li>
+						<h5 class="counter" data-count="83">0%</h5>
+						<p>javascript</p>
+					</li>
+					<li>
+						<h5 class="counter" data-count="57">0%</h5>
+						<p>NodeJs</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="contact" id="contact">
+				<h2 class="title">Get in touch</h2>
+
+				<form>
+					<div class="input-container">
+						<input type="text" placeholder="First name" tabindex="1" />
+						<input type="text" placeholder="Last name" tabindex="2" />
+					</div>
+					<div class="input-container">
+						<input type="email" placeholder="Email" tabindex="3" />
+						<input type="tel" placeholder="Phone number" tabindex="4" />
+					</div>
+					<textarea
+						name="message"
+						placeholder="What would you like to say?"
+						rows="6"
+						cols="75"
+						tabindex="5"
+					></textarea>
+					<div class="button-container">
+						<button>Submit now</button>
+					</div>
+				</form>
+			</section>
+
+			<footer>
+				<p>
+					© Learn Tech In Pidgin
+					<span id="currentYear"></span>
+				</p>
+			</footer>
 		</main>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+		<!-- Counter up 2  -->
+		<script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+		<script src="main.js" defer></script>
 	</body>
 </html>
+
+<!-- https://swiperjs.com/demos -->
