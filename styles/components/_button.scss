@@ -1,0 +1,23 @@
+/* button styles*/
+.btn {
+	cursor: pointer;
+	padding: 1rem 1.5rem;
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: currentColor;
+	background-color: $-color-primary;
+	border: 1px solid $-color-primary;
+	border-radius: $-border-sm;
+	transition: all 0.3s ease-in;
+
+	&--outline {
+		background-color: transparent;
+		border: 1px solid currentColor;
+	}
+
+	&:hover {
+		background-color: transparent;
+		border: 1px solid $-color-primary;
+		color: $-color-primary;
+	}
+}

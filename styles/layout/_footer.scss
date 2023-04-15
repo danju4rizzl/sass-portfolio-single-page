@@ -1,0 +1,12 @@
+/* Footer section starts here */
+footer {
+	padding: 5rem;
+	text-align: center;
+	@include respond(tab-port) {
+		padding: 2rem;
+	}
+
+	&__text {
+		font-size: 0.8rem;
+	}
+}
