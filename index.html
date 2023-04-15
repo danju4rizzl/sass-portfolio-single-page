@@ -172,22 +172,37 @@
 
 			<section class="contact" id="contact">
 				<h2 class="title">Get in touch</h2>
-				<form class="form">
+				<form class="form" name="contact" netlify>
 					<div class="form__inputs">
-						<input type="text" placeholder="First name" tabindex="1" />
-						<input type="text" placeholder="Last name" tabindex="2" />
+						<input
+							type="text"
+							placeholder="First name"
+							tabindex="1"
+							name="firstName"
+						/>
+						<input
+							type="text"
+							placeholder="Last name"
+							tabindex="2"
+							name="lastName"
+						/>
 					</div>
 					<div class="form__inputs">
-						<input type="email" placeholder="Email" tabindex="3" />
-						<input type="tel" placeholder="Phone number" tabindex="4" />
+						<input type="email" placeholder="Email" tabindex="3" name="email" />
+						<input
+							type="tel"
+							placeholder="Phone number"
+							tabindex="4"
+							name="phone"
+						/>
 					</div>
 					<textarea
-						name="message"
 						placeholder="What would you like to say?"
 						tabindex="5"
+						name="message"
 					></textarea>
 					<div class="form__submit">
-						<button class="btn">Submit now</button>
+						<button class="btn" type="submit">Submit now</button>
 					</div>
 				</form>
 			</section>
