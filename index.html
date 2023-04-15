@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Portfolio</title>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="styles/main.css" />
 
 		<link
 			rel="stylesheet"
@@ -22,11 +22,11 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="logo">
+			<div class="header__logo">
 				<a href="#">Dan</a>
 			</div>
 			<nav>
-				<ul>
+				<ul class="header__links">
 					<li><a href="#about">About me</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#contact">Contact me</a></li>
@@ -35,24 +35,24 @@
 		</header>
 		<main>
 			<section class="hero">
-				<div class="inner-text">
+				<div class="hero__content">
 					<h1>Hi, I am <span> Deejay Dev</span></h1>
 					<p>Web Developer</p>
 
-					<div class="button-group">
+					<div class="hero__buttons">
 						<a
 							href="https://res.cloudinary.com/deejaydev/raw/upload/v1681348552/deejaydev/CORE_CV_template_1_bhyr17.doc"
 							download
 							target="_blank"
+							class="btn"
 						>
-							<button type="button">Download</button>
+							Download CV
 						</a>
-						<button>Download CV</button>
-						<button>Learn More</button>
+						<button class="btn btn--outline">Learn More</button>
 					</div>
 				</div>
 
-				<div class="inner-image">
+				<div class="hero__image">
 					<img
 						src="https://avatars.githubusercontent.com/u/25222958?v=4"
 						alt="Deejaydev"
@@ -62,7 +62,7 @@
 
 			<section class="about" id="about">
 				<h2 class="title">About</h2>
-				<p>
+				<p class="about__text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -70,45 +70,44 @@
 					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 					pariatur. Excepteur sint occaecat cupidatat non proident
 				</p>
-				<div class="">
-					<ul>
-						<li>
-							<i class="fa-solid fa-user"></i>
-							<div class="">
-								<h6>Full Name</h6>
-								<p>Deejaydev</p>
-							</div>
-						</li>
+				<ul class="about__info">
+					<li>
+						<i class="fa-solid fa-user"></i>
+						<div class="">
+							<h6>Full Name</h6>
+							<p>Deejaydev</p>
+						</div>
+					</li>
 
-						<li>
-							<i class="fa-solid fa-at"></i>
-							<div class="">
-								<h6>Email Address</h6>
-								<p>deejaydev@mail.com</p>
-							</div>
-						</li>
+					<li>
+						<i class="fa-solid fa-at"></i>
+						<div class="">
+							<h6>Email Address</h6>
+							<p>deejaydev@mail.com</p>
+						</div>
+					</li>
 
-						<li>
-							<i class="fa-brands fa-twitter"></i>
-							<div class="">
-								<h6>Twitter</h6>
-								<p>@deejaydev</p>
-							</div>
-						</li>
+					<li>
+						<i class="fa-brands fa-twitter"></i>
+						<div class="">
+							<h6>Twitter</h6>
+							<p>@deejaydev</p>
+						</div>
+					</li>
 
-						<li>
-							<i class="fa-solid fa-phone"></i>
-							<div class="">
-								<h6>Phone</h6>
-								<p>+24312345678</p>
-							</div>
-						</li>
-					</ul>
-				</div>
+					<li>
+						<i class="fa-solid fa-phone"></i>
+						<div class="">
+							<h6>Phone</h6>
+							<p>+24312345678</p>
+						</div>
+					</li>
+				</ul>
 			</section>
 
 			<section class="services" id="services">
 				<h2 class="title">What i do</h2>
+
 				<div class="swiper" id="cardSwiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -151,21 +150,21 @@
 				</div>
 
 				<h2 class="title">My Skills</h2>
-				<ul>
+				<ul class="services__skills">
 					<li>
-						<h5 class="counter" data-count="98">0%</h5>
+						<h5 class="counter" data-deejay="98">0%</h5>
 						<p>html</p>
 					</li>
 					<li>
-						<h5 class="counter" data-count="85">0%</h5>
+						<h5 class="counter" data-deejay="85">0%</h5>
 						<p>css</p>
 					</li>
 					<li>
-						<h5 class="counter" data-count="83">0%</h5>
+						<h5 class="counter" data-deejay="83">0%</h5>
 						<p>javascript</p>
 					</li>
 					<li>
-						<h5 class="counter" data-count="57">0%</h5>
+						<h5 class="counter" data-deejay="57">0%</h5>
 						<p>NodeJs</p>
 					</li>
 				</ul>
@@ -174,30 +173,28 @@
 			<section class="contact" id="contact">
 				<h2 class="title">Get in touch</h2>
 
-				<form>
-					<div class="input-container">
+				<form class="contact__form">
+					<div class="contact__form-inputs">
 						<input type="text" placeholder="First name" tabindex="1" />
 						<input type="text" placeholder="Last name" tabindex="2" />
 					</div>
-					<div class="input-container">
+					<div class="contact__form-inputs">
 						<input type="email" placeholder="Email" tabindex="3" />
 						<input type="tel" placeholder="Phone number" tabindex="4" />
 					</div>
 					<textarea
 						name="message"
 						placeholder="What would you like to say?"
-						rows="6"
-						cols="75"
 						tabindex="5"
 					></textarea>
-					<div class="button-container">
-						<button>Submit now</button>
+					<div class="contact__form-submit">
+						<button class="btn">Submit now</button>
 					</div>
 				</form>
 			</section>
 
-			<footer>
-				<p>
+			<footer class="footer">
+				<p class="footer__text">
 					© Learn Tech In Pidgin
 					<span id="currentYear"></span>
 				</p>
@@ -207,9 +204,7 @@
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-		<!-- Counter up 2  -->
-		<script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
-		<script src="main.js" defer></script>
+		<script src="scripts/main.js" defer></script>
 	</body>
 </html>
 
