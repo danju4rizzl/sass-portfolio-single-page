@@ -2,10 +2,10 @@
 .card {
 	background-color: $-color-dark-2;
 	padding: 2rem 3.5rem;
-	// min-width: 349px;
 	min-height: 241px;
-	transition: border 0.2s ease;
 	border-radius: $-border-sm;
+	border-bottom: 5px solid $-color-dark-2;
+	transition: border 0.2s ease;
 	display: grid;
 	align-items: center;
 
