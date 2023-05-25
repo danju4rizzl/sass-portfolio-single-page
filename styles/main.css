@@ -37,6 +37,7 @@ p {
   font-size: 3rem;
   text-align: center;
   margin: 5rem;
+  line-height: 1.2;
 }
 
 /* button styles*/
@@ -102,6 +103,14 @@ p {
   border-bottom: 5px solid #27ae60;
 }
 
+.page {
+  transition: margin-left 0.3s;
+  overflow: hidden;
+}
+.page.menu-visible {
+  margin-left: 20%;
+}
+
 /* header section starts here */
 .header {
   display: flex;
@@ -131,6 +140,40 @@ p {
 }
 .header__links li:hover {
   color: #27ae60;
+}
+.header__mobile {
+  display: none;
+  z-index: 1000;
+}
+@media only screen and (max-width: 56.25em) {
+  .header__mobile {
+    display: block;
+  }
+}
+.header__mobile i {
+  font-size: 1.5rem;
+  color: #27ae60;
+}
+.header__mobile ul {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100%;
+  background-color: #535353;
+  padding: 5rem 1.5rem;
+  display: grid;
+  place-content: center;
+  transition: left 0.3s;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.header__mobile ul.visible {
+  left: 0;
+}
+.header__mobile ul li {
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 
 .form {

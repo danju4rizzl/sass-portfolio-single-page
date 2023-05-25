@@ -1,6 +1,10 @@
 const counters = document.querySelectorAll(".counter")
 
-// To makes the counter only run once
+const menuToggler = document.getElementById("menuToggler")
+const mobileNav = document.getElementById("mobileMenu")
+const pageWrapper = document.querySelector(".page")
+
+// This makes the counter only run once
 let counted = false
 
 const swiper = new Swiper("#cardSwiper", {
@@ -50,7 +54,7 @@ const counter = (element, amount) => {
 }
 
 // check if element is in viewport
-function isInViewport(el) {
+const isInViewport = (el) => {
 	const rect = el.getBoundingClientRect()
 	return (
 		rect.top >= 0 &&
@@ -61,12 +65,28 @@ function isInViewport(el) {
 	)
 }
 
+// This will function will handle the mobile togglers whenever the  icon is clicked
+const toggleMenu = () => {
+	// change the code to change the hamburger icon to a close icon
+	menuToggler.classList.toggle("fa-close")
+
+	mobileNav.classList.toggle("visible")
+	pageWrapper.classList.toggle("menu-visible")
+}
+
+// This will show the current year in the footer
+const showCurrentYear = () => {
+	const currentYear = document.querySelector("#currentYear")
+	const year = new Date().getFullYear()
+	currentYear.innerHTML = year
+}
+
 // Will run when the page is scrolled then check if the counter is in the viewport and if the counter was already counted or not
 window.addEventListener("scroll", function () {
 	if (!counted && isInViewport(counters[0])) {
 		counted = true
 		counters.forEach((counterElement) => {
-			counter(counterElement, counterElement.getAttribute("data-deejay"))
+			counter(counterElement, counterElement.getAttribute("data-counter"))
 		})
 		console.log("In viewport")
 	} else {
@@ -75,14 +95,8 @@ window.addEventListener("scroll", function () {
 	}
 })
 
-// This will show the current year in the footer
-function showCurrentYear() {
-	const currentYear = document.querySelector("#currentYear")
-	const year = new Date().getFullYear()
-	currentYear.innerHTML = year
-}
+// Add an event listener to the hamburger icon
+menuToggler.addEventListener("click", toggleMenu)
 
-// Runs when the page is loaded
-window.addEventListener("load", () => {
-	showCurrentYear()
-})
+// Call the functions whenever the DOM is loaded
+document.addEventListener("DOMContentLoaded", showCurrentYear)

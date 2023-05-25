@@ -33,26 +33,28 @@
 		gap: 0.5rem;
 	}
 
-	&__image img {
-		width: 100%;
-		height: 100%;
-		border-radius: 50%;
-		border: 2px solid $-color-primary;
-		padding: 1.2rem;
-		filter: grayscale(1);
-		transition: all 0.3s ease;
-		box-shadow: 0 0 30px $-color-primary;
-		// animation: hoverEffect 3s ease-in-out infinite;
+	&__image {
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			border: 2px solid $-color-primary;
+			padding: 1.2rem;
+			filter: grayscale(1);
+			transition: all 0.3s ease;
+			box-shadow: 0 0 30px $-color-primary;
+			// animation: hoverEffect 3s ease-in-out infinite;
 
-		&:hover {
-			filter: grayscale(0);
-			box-shadow: 0 0 40px $-color-primary;
-		}
+			&:hover {
+				filter: grayscale(0);
+				box-shadow: 0 0 40px $-color-primary;
+			}
 
-		@include respond(tab-port) {
-			width: 50%;
-			height: 50%;
-			padding: 0.5rem;
+			@include respond(tab-port) {
+				width: 50%;
+				height: 50%;
+				padding: 0.5rem;
+			}
 		}
 	}
 }

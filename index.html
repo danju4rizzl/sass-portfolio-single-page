@@ -25,6 +25,8 @@
 			<div class="header__logo">
 				<a href="#">Dan</a>
 			</div>
+
+			<!-- Desktop menu  -->
 			<nav>
 				<ul class="header__links">
 					<li><a href="#about">About me</a></li>
@@ -32,188 +34,211 @@
 					<li><a href="#contact">Contact me</a></li>
 				</ul>
 			</nav>
+
+			<!-- Mobile menu -->
+			<nav class="header__mobile">
+				<i class="fa-solid fa-bars" id="menuToggler"></i>
+				<ul id="mobileMenu">
+					<li><a href="#about">About me</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact me</a></li>
+				</ul>
+			</nav>
 		</header>
-		<main>
-			<section class="hero">
-				<div class="hero__content">
-					<h1>Hi, I am <span> Deejay Dev</span></h1>
-					<p>Web Developer</p>
 
-					<div class="hero__buttons">
-						<a
-							href="https://res.cloudinary.com/deejaydev/raw/upload/v1681348552/deejaydev/CORE_CV_template_1_bhyr17.doc"
-							download
-							target="_blank"
-							class="btn"
-						>
-							Download CV
-						</a>
-						<button class="btn btn--outline">Learn More</button>
+		<div class="page">
+			<main>
+				<section class="hero">
+					<div class="hero__content">
+						<h1>Hi, I am <span> Deejay Dev</span></h1>
+						<p>Web Developer</p>
+
+						<div class="hero__buttons">
+							<a
+								href="https://res.cloudinary.com/deejaydev/raw/upload/v1681348552/deejaydev/CORE_CV_template_1_bhyr17.doc"
+								target="_blank"
+								class="btn"
+								download
+							>
+								Download CV
+							</a>
+							<a
+								href="https://t.me/+hEQueA4gvk9lYjJk"
+								target="_blank"
+								class="btn btn--outline"
+								>Join Telegram</a
+							>
+						</div>
 					</div>
-				</div>
 
-				<div class="hero__image">
-					<img
-						src="https://avatars.githubusercontent.com/u/25222958?v=4"
-						alt="Deejaydev"
-					/>
-				</div>
-			</section>
+					<div class="hero__image">
+						<img
+							src="https://avatars.githubusercontent.com/u/25222958?v=4"
+							alt="Deejaydev"
+						/>
+					</div>
+				</section>
 
-			<section class="about" id="about">
-				<h2 class="title">About</h2>
-				<p class="about__text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident
+				<section class="about" id="about">
+					<h2 class="title">About</h2>
+					<p class="about__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident
+					</p>
+					<ul class="about__info">
+						<li>
+							<i class="fa-solid fa-user"></i>
+							<div class="">
+								<h6>Full Name</h6>
+								<p>Deejaydev</p>
+							</div>
+						</li>
+
+						<li>
+							<i class="fa-solid fa-at"></i>
+							<div class="">
+								<h6>Email Address</h6>
+								<p>deejaydev@mail.com</p>
+							</div>
+						</li>
+
+						<li>
+							<i class="fa-brands fa-twitter"></i>
+							<div class="">
+								<h6>Twitter</h6>
+								<p>@deejaydev</p>
+							</div>
+						</li>
+
+						<li>
+							<i class="fa-solid fa-phone"></i>
+							<div class="">
+								<h6>Phone</h6>
+								<p>+24312345678</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<section class="services" id="services">
+					<h2 class="title">What i do</h2>
+
+					<div class="swiper" id="cardSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="card">
+									<i class="fa-brands fa-connectdevelop"></i>
+									<h4>Software Development</h4>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<i class="fa-brands fa-dev"></i>
+									<h4>Web Development</h4>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<i class="fa-brands fa-codepen"></i>
+									<h4>Web <br />Design</h4>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<i class="fa-solid fa-server"></i>
+									<h4>Backend Development</h4>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<i class="fa-solid fa-newspaper"></i>
+									<h4>Content Writing</h4>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<i class="fa-solid fa-robot"></i>
+									<h4>Technical Consultant</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h2 class="title">My Skills</h2>
+					<ul class="services__skills">
+						<li>
+							<h5 class="counter" data-counter="98">0%</h5>
+							<p>html</p>
+						</li>
+						<li>
+							<h5 class="counter" data-counter="85">0%</h5>
+							<p>css</p>
+						</li>
+						<li>
+							<h5 class="counter" data-counter="83">0%</h5>
+							<p>javascript</p>
+						</li>
+						<li>
+							<h5 class="counter" data-counter="57">0%</h5>
+							<p>NodeJs</p>
+						</li>
+					</ul>
+				</section>
+
+				<section class="contact" id="contact">
+					<h2 class="title">Get in touch</h2>
+					<form class="form" name="contact" netlify>
+						<div class="form__inputs">
+							<input
+								type="text"
+								placeholder="First name"
+								tabindex="1"
+								name="firstName"
+							/>
+							<input
+								type="text"
+								placeholder="Last name"
+								tabindex="2"
+								name="lastName"
+							/>
+						</div>
+						<div class="form__inputs">
+							<input
+								type="email"
+								placeholder="Email"
+								tabindex="3"
+								name="email"
+							/>
+							<input
+								type="tel"
+								placeholder="Phone number"
+								tabindex="4"
+								name="phone"
+							/>
+						</div>
+						<textarea
+							placeholder="What would you like to say?"
+							tabindex="5"
+							name="message"
+						></textarea>
+						<div class="form__submit">
+							<button class="btn" type="submit">Submit now</button>
+						</div>
+					</form>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<p class="footer__text">
+					© Learn Tech In Pidgin
+					<span id="currentYear"></span>
 				</p>
-				<ul class="about__info">
-					<li>
-						<i class="fa-solid fa-user"></i>
-						<div class="">
-							<h6>Full Name</h6>
-							<p>Deejaydev</p>
-						</div>
-					</li>
-
-					<li>
-						<i class="fa-solid fa-at"></i>
-						<div class="">
-							<h6>Email Address</h6>
-							<p>deejaydev@mail.com</p>
-						</div>
-					</li>
-
-					<li>
-						<i class="fa-brands fa-twitter"></i>
-						<div class="">
-							<h6>Twitter</h6>
-							<p>@deejaydev</p>
-						</div>
-					</li>
-
-					<li>
-						<i class="fa-solid fa-phone"></i>
-						<div class="">
-							<h6>Phone</h6>
-							<p>+24312345678</p>
-						</div>
-					</li>
-				</ul>
-			</section>
-
-			<section class="services" id="services">
-				<h2 class="title">What i do</h2>
-
-				<div class="swiper" id="cardSwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="card">
-								<i class="fa-brands fa-connectdevelop"></i>
-								<h4>Software Development</h4>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<i class="fa-brands fa-dev"></i>
-								<h4>Web Development</h4>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<i class="fa-brands fa-codepen"></i>
-								<h4>Web <br />Design</h4>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<i class="fa-solid fa-server"></i>
-								<h4>Backend Development</h4>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<i class="fa-solid fa-newspaper"></i>
-								<h4>Content Writing</h4>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<i class="fa-solid fa-robot"></i>
-								<h4>Technical Consultant</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<h2 class="title">My Skills</h2>
-				<ul class="services__skills">
-					<li>
-						<h5 class="counter" data-deejay="98">0%</h5>
-						<p>html</p>
-					</li>
-					<li>
-						<h5 class="counter" data-deejay="85">0%</h5>
-						<p>css</p>
-					</li>
-					<li>
-						<h5 class="counter" data-deejay="83">0%</h5>
-						<p>javascript</p>
-					</li>
-					<li>
-						<h5 class="counter" data-deejay="57">0%</h5>
-						<p>NodeJs</p>
-					</li>
-				</ul>
-			</section>
-
-			<section class="contact" id="contact">
-				<h2 class="title">Get in touch</h2>
-				<form class="form" name="contact" netlify>
-					<div class="form__inputs">
-						<input
-							type="text"
-							placeholder="First name"
-							tabindex="1"
-							name="firstName"
-						/>
-						<input
-							type="text"
-							placeholder="Last name"
-							tabindex="2"
-							name="lastName"
-						/>
-					</div>
-					<div class="form__inputs">
-						<input type="email" placeholder="Email" tabindex="3" name="email" />
-						<input
-							type="tel"
-							placeholder="Phone number"
-							tabindex="4"
-							name="phone"
-						/>
-					</div>
-					<textarea
-						placeholder="What would you like to say?"
-						tabindex="5"
-						name="message"
-					></textarea>
-					<div class="form__submit">
-						<button class="btn" type="submit">Submit now</button>
-					</div>
-				</form>
-			</section>
-		</main>
-
-		<footer class="footer">
-			<p class="footer__text">
-				© Learn Tech In Pidgin
-				<span id="currentYear"></span>
-			</p>
-		</footer>
+			</footer>
+		</div>
 
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
