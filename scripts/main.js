@@ -1,12 +1,13 @@
 const counters = document.querySelectorAll(".counter")
-
 const menuToggler = document.getElementById("menuToggler")
+
 const mobileNav = document.getElementById("mobileMenu")
 const pageWrapper = document.querySelector(".page")
 
 // This makes the counter only run once
 let counted = false
 
+// swiperJS for the card slider
 const swiper = new Swiper("#cardSwiper", {
 	slidesPerView: 1,
 	spaceBetween: 30,
@@ -67,9 +68,7 @@ const isInViewport = (el) => {
 
 // This will function will handle the mobile togglers whenever the  icon is clicked
 const toggleMenu = () => {
-	// change the code to change the hamburger icon to a close icon
-	menuToggler.classList.toggle("fa-close")
-
+	menuToggler.classList.toggle("fa-close") // Change the icon
 	mobileNav.classList.toggle("visible")
 	pageWrapper.classList.toggle("menu-visible")
 }
@@ -100,3 +99,8 @@ menuToggler.addEventListener("click", toggleMenu)
 
 // Call the functions whenever the DOM is loaded
 document.addEventListener("DOMContentLoaded", showCurrentYear)
+
+// Add an event listener to the page wrapper to close the menu whenever the user clicks outside the menu
+pageWrapper.addEventListener("click", () => {
+	pageWrapper.classList.contains("menu-visible") && toggleMenu()
+})

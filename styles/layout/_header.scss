@@ -10,30 +10,45 @@
 /* header section starts here */
 .header {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0 8.5rem;
+	padding: 1.2rem 5rem;
 
 	@include respond(tab-port) {
-		padding: 0 4.5rem;
+		padding: 1.2rem 3.8rem;
+		background-color: $-color-dark-2;
+		border-radius: 0 0 $-border-sm $-border-sm;
 	}
 
 	&__logo {
 		font-size: 3rem;
-		flex: 1;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include neonText;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		transition: opacity 0.3s;
 	}
 
-	&__links {
+	&__desktop {
 		display: flex;
 
 		@include respond(tab-port) {
 			display: none;
 		}
 
-		& li {
-			font-size: 1.1rem;
-			margin: 0 0.8rem;
-			&:hover {
-				color: $-color-primary;
+		& ul {
+			display: flex;
+
+			& li {
+				font-size: 1.1rem;
+				margin: 0 0.8rem;
+				&:hover {
+					@include neonText;
+				}
 			}
 		}
 	}
@@ -57,11 +72,11 @@
 			left: -100%;
 			width: 70%;
 			height: 100%;
-			background-color: $-color-dark-1;
 			padding: 5rem 1.5rem;
 			display: grid;
 			place-content: center;
-			transition: left 0.3s;
+			text-align: center;
+			background-color: $-color-dark-1;
 			border-top-right-radius: $-border-sm;
 			border-top-left-radius: $-border-sm;
 
@@ -73,6 +88,8 @@
 				text-transform: uppercase;
 				font-size: 1.4rem;
 			}
+
+			transition: left 0.3s;
 		}
 	}
 }

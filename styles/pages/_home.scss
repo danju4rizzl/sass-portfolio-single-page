@@ -145,18 +145,22 @@
 			min-width: 10rem;
 		}
 
-		& h5 {
-			color: $-color-dark-1;
-			font-size: 3.4rem;
-			letter-spacing: -3.5px;
-		}
+		& li {
+			margin: 1rem;
 
-		& p {
-			margin-top: -1rem;
-			font-size: 1.2rem;
-			color: $-color-primary;
-			font-weight: bold;
-			text-transform: uppercase;
+			& h5 {
+				color: $-color-dark-1;
+				font-size: 3.4rem;
+				letter-spacing: -3.5px;
+			}
+
+			& p {
+				margin-top: -1rem;
+				font-size: 1.2rem;
+				color: $-color-primary;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
 		}
 	}
 }

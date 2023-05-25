@@ -1,26 +1,38 @@
 // helper classes for responsive design
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
+		// apply styles for small screens, up to 600px
 		@media only screen and (max-width: 37.5em) {
 			@content;
-		} //600px
+		}
 	}
 
 	@if $breakpoint == tab-port {
+		// apply styles for medium screens, up to 900px
 		@media only screen and (max-width: 56.25em) {
 			@content;
-		} //900px
+		}
 	}
 
 	@if $breakpoint == tab-land {
+		// apply styles for large screens, up to 1200px
 		@media only screen and (max-width: 75em) {
 			@content;
-		} //1200px
+		}
 	}
 
-	@if $breakpoint == big-desktop {
+	@if $breakpoint == desktop {
+		// apply styles for extra large screens, above 1800px
 		@media only screen and (min-width: 112.5em) {
 			@content;
-		} //1800
+		}
 	}
+}
+
+// Give a cool neon effect to any text
+@mixin neonText() {
+	color: $-color-white;
+	text-shadow: 0 0 10px $-color-white, 0 0 20px $-color-white,
+		0 0 30px $-color-primary, 0 0 40px $-color-primary, 0 0 50px $-color-primary,
+		0 0 60px $-color-primary, 0 0 70px $-color-primary;
 }
