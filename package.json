@@ -1,0 +1,20 @@
+{
+  "name": "sass-portfolio-project",
+  "version": "1.0.0",
+  "description": "A simple portfolio project using sass and parcel bundler  ",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "portfolio"
+  ],
+  "author": "@real_deejay_dev",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.9.1",
+    "parcel": "^2.9.1"
+  }
+}
