@@ -1,4 +1,4 @@
-# Learn SASS Portfolio
+# Learn SASS by building your Portfolio
 
 Hey there! We'll be using Parcel Bundler 2 to make the setup process smooth and efficient. So, let's dive right in!
 
