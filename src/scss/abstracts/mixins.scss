@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 // helper classes for responsive design
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
@@ -29,10 +31,10 @@
 	}
 }
 
-// Give a cool neon effect to any text
+// Gives a cool neon effect to any text
 @mixin neonText() {
-	color: $-color-white;
-	text-shadow: 0 0 10px $-color-white, 0 0 20px $-color-white,
-		0 0 30px $-color-primary, 0 0 40px $-color-primary, 0 0 50px $-color-primary,
-		0 0 60px $-color-primary, 0 0 70px $-color-primary;
+	color: $color-white;
+	text-shadow: 0 0 10px $color-white, 0 0 20px $color-white,
+		0 0 30px $color-primary, 0 0 40px $color-primary, 0 0 50px $color-primary,
+		0 0 60px $color-primary, 0 0 70px $color-primary;
 }

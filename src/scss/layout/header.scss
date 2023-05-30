@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .page {
 	transition: margin-left 0.3s;
 	overflow: hidden;
@@ -16,8 +19,8 @@
 
 	@include respond(tab-port) {
 		padding: 1.2rem 3.8rem;
-		background-color: $-color-dark-2;
-		border-radius: 0 0 $-border-sm $-border-sm;
+		background-color: $color-dark-2;
+		border-radius: 0 0 $border-sm $border-sm;
 	}
 
 	&__logo {
@@ -63,7 +66,7 @@
 
 		& i {
 			font-size: 1.5rem;
-			color: $-color-primary;
+			color: $color-primary;
 		}
 
 		& ul {
@@ -76,9 +79,9 @@
 			display: grid;
 			place-content: center;
 			text-align: center;
-			background-color: $-color-dark-1;
-			border-top-right-radius: $-border-sm;
-			border-top-left-radius: $-border-sm;
+			background-color: $color-dark-1;
+			border-top-right-radius: $border-sm;
+			border-top-left-radius: $border-sm;
 
 			&.visible {
 				left: 0;

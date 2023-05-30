@@ -4,13 +4,20 @@
 * DON'T add anything else  to this file
 */
 
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "base/base";
-@import "base/typography";
-@import "components/button";
-@import "components/card";
-@import "layout/header";
-@import "layout/forms";
-@import "layout/footer";
-@import "pages/home";
+/* 
+The old 👴 way to import partials
+@import "./abstracts";
+@import "./base";
+@import "./components";
+@import "./layout";
+@import "./pages/home";
+*/
+
+/*
+The new ✨way to import partials
+*/
+@use "./abstracts";
+@use "./base";
+@use "./components";
+@use "./layout";
+@use "./pages/home";

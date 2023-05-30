@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .form {
 	display: grid;
 	justify-content: center;
@@ -23,7 +26,7 @@
 
 		& input {
 			border: none;
-			border-bottom: 1px solid $-color-dark-1;
+			border-bottom: 1px solid $color-dark-1;
 			padding: 0.5rem 0;
 			width: 100%;
 
@@ -35,7 +38,7 @@
 
 	& textarea {
 		margin: 2rem auto;
-		border-radius: $-border-sm;
+		border-radius: $border-sm;
 		padding: 1rem;
 		font-family: inherit;
 		width: 100%;
