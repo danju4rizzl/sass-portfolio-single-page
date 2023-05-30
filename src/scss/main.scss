@@ -6,15 +6,15 @@
 
 /* 
 The old 👴 way to import partials
-@import "./abstracts";
-@import "./base";
-@import "./components";
-@import "./layout";
-@import "./pages/home";
+* @import "./abstracts";
+* @import "./base";
+* @import "./components";
+* @import "./layout";
+* @import "./pages/home";
 */
 
 /*
-The new ✨way to import partials
+* The new ✨ way to import partials
 */
 @use "./abstracts";
 @use "./base";
