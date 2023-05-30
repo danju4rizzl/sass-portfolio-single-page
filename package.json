@@ -4,7 +4,7 @@
   "description": "A simple portfolio project using sass and parcel bundler  ",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build"
+    "build": "parcel build src/index.html"
   },
   "keywords": [
     "sass",
